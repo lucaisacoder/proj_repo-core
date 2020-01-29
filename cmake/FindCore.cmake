@@ -19,6 +19,8 @@ find_library(Core_LIBRARIES
     HINTS "${Core_ROOT_DIRS}/output")
 
 if(Core_INCLUDE_DIR)
+    if(NOT Core_LIBRARIES)
+    endif()
     set(Core_FOUND true)
     set(Core_INCLUDE_DIRS ${Core_INCLUDE_DIR})
 endif()
